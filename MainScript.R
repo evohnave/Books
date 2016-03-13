@@ -53,3 +53,4 @@ newPurchaseId <- function(mongo, coll) {
 insertOne <- function(mongo, coll, rec) {
   mongo.insert(mongo, coll, rec)
 }
+
