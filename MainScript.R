@@ -12,7 +12,7 @@ db <- "Books"
 coll <- "Books.books"
 
 mongo.count(mongo, coll)
-
+# Very important with rmongodb to specify the argument names
 bson <- mongo.findOne(mongo = mongo, ns = coll, query = '{"author.lastName":"Mull"}')
 book <- mongo.bson.to.list(bson)
 
