@@ -4,23 +4,24 @@
 ###                                                                          ###
 ################################################################################
 
+source(file = "MainScript.R")
 # Note: ğ must be encoded manually as \\u011f, İ as \\u0130, ı as \\u0131
 
 # Data input section
 
-lastName <- "ğĞüÜşŞİıöÖçÇ"
-firstName <- "first names"
-title <- "Title"
-ISBN13 <- "978-3-926195-06-7"
-cover <- "hard cover"
-publisher <- "Sumer Kitabevi"
-coverPictureURL <- "http://www.boyutstore.com/ProductImages/90868/big/byg.shfy.00718.jpg"
-copyright <- 1993
-datePublished <- "January 1993"
+lastName <- "Stroud"
+firstName <- "Jonathan"
+title <- "The Whispering Skull"
+ISBN13 <- "978-1-4231-9462-0"
+cover <- "paperback"
+publisher <- "Disney Hyperion"
+coverPictureURL <- "http://ecx.images-amazon.com/images/I/51%2BYZIFgKdL.jpg"
+copyright <- 2014
+datePublished <- "September 2015"
 place <- "New York"
-lccn <- "93-12345"
-location  <- "Eric"
-price <- 50.00
+lccn <- "2014014683"
+location  <- "Helen"
+price <- 7.99
 
 # Code section
 Author1 <- '"author" : {"lastName" : "'
