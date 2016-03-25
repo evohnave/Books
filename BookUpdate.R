@@ -1,28 +1,3 @@
-# json style
-library(stringi)
-book <- '{"author" : [{"lastName" : "Artuk", "firstName" : "İbrahim"},
-                      {"lastName" : "Artuk", "firstName" : "Cevriye"}],
-          "title" : "Artukoğulları Sikkeleri",
-          "ISBN13" : "978-0883633304",
-          "purchaseId" :  '
-book2 <- ',
-          "cover" : "hard cover",
-          "publisher" : "Sümer Kitabevi",
-          "coverPicture" : "http://www.boyutstore.com/ProductImages/90868/big/byg.shfy.00718.jpg",
-          "copyright" : 1993,
-          "datePublished" : "January 1993",
-          "place" :  "İstanbul",
-          "location" : "Eric",
-          "PurchasePrice" : 50.00
-         }'
-
-book <- paste(book, newPurchaseId(mongo, coll), book2, sep = "")
-#book <- stri_escape_unicode(book)
-validate(book)
-prettify(book)
-insertOne(mongo, coll, book)
-
-
 ################################################################################
 ###                                                                          ###
 ###     New Version!                                                         ###
