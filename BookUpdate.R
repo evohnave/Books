@@ -64,7 +64,7 @@ datePublished <- paste('"datePublished" : "', datePublished, '", ', sep = "")
 place <- paste('"place" : "', stri_escape_unicode(place), '", ', sep = "")
 lccn <- paste('"lccn" : "', lccn, '", ', sep = "")
 location <- paste('"location" : "', location, '", ', sep = "")
-price <- paste('"PurchasePrice" : ', price, ', ', sep = "")
+price <- paste('"PurchasePrice" : ', price, sep = "")
 
 book <- paste('{', author, title, ISBN13, purchaseId, cover, coverPicture,
               copyright, datePublished, place, lccn, location, price, '}',
