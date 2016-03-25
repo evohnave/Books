@@ -1,6 +1,7 @@
 library(rmongodb)
 library(jsonlite)
 library(lubridate)
+library(stringi)
 
 # create connection to mongodb
 mongo <- mongo.create()
