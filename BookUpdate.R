@@ -9,19 +9,19 @@ source(file = "MainScript.R")
 
 # Data input section
 
-lastName <- "Stroud"
-firstName <- "Jonathan"
-title <- "The Whispering Skull"
-ISBN13 <- "978-1-4231-9462-0"
+lastName <- "Dashner"
+firstName <- "James"
+title <- "The Death Cure"
+ISBN13 <- "978-0-385-73878-1"
 cover <- "paperback"
-publisher <- "Disney Hyperion"
-coverPictureURL <- "http://ecx.images-amazon.com/images/I/51%2BYZIFgKdL.jpg"
-copyright <- 2014
-datePublished <- "September 2015"
+publisher <- "Delacorte Press"
+coverPictureURL <- "http://ecx.images-amazon.com/images/I/61cnEiQo1nL.jpg"
+copyright <- 2011
+datePublished <- "January 2011"
 place <- "New York"
-lccn <- "2014014683"
-location  <- "Helen"
-price <- 7.99
+lccn <- 2011022236
+location  <- "Eric"
+price <- 8.47
 
 # Code section
 Author1 <- '"author" : {"lastName" : "'
@@ -43,8 +43,12 @@ location <- paste('"location" : "', location, '", ', sep = "")
 price <- paste('"PurchasePrice" : ', price, sep = "")
 
 book <- paste('{', author, title, ISBN13, purchaseId, cover, coverPicture,
-              copyright, datePublished, place, lccn, location, price, '}',
+              publisher, copyright, datePublished, place, lccn, location, 
+              price, '}',
               sep = "")
+# book <- paste('{', author, title, ISBN13, purchaseId, cover, coverPicture,
+#               copyright, datePublished, place, location, price, '}',
+#               sep = "")
 validate(book)
 prettify(book)
 insertOne(mongo, coll, book)
