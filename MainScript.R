@@ -46,7 +46,7 @@ newPurchaseId <- function(mongo, coll) {
   if(yr == IDyear && mo == IDmonth){
     rv <- last + 1
   } else {
-    rv <- year * 10000 + month * 100 + 1
+    rv <- yr * 10000 + mo * 100 + 1
   }
   return(rv)
 }
