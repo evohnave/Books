@@ -9,19 +9,19 @@ source(file = "MainScript.R")
 
 # Data input section
 
-lastName <- "Dashner"
-firstName <- "James"
-title <- "The Death Cure"
-ISBN13 <- "978-0-385-73878-1"
+lastName <- "Clare"
+firstName <- "Cassandra"
+title <- "City Of Bones"
+ISBN13 <- "978-1-4814-5592-3"
 cover <- "paperback"
-publisher <- "Delacorte Press"
-coverPictureURL <- "http://ecx.images-amazon.com/images/I/61cnEiQo1nL.jpg"
-copyright <- 2011
-datePublished <- "January 2011"
+publisher <- "Margaret K. McElderry Books"
+coverPictureURL <- "http://ecx.images-amazon.com/images/I/514yB2b0CLL.jpg"
+copyright <- 2007
+datePublished <- "September 2015"
 place <- "New York"
-lccn <- 2011022236
-location  <- "Eric"
-price <- 8.47
+lccn <- 2006008108
+location  <- "Helen"
+price <- 10.67
 
 # Code section
 Author1 <- '"author" : {"lastName" : "'
