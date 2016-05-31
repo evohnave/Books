@@ -9,19 +9,19 @@ source(file = "MainScript.R")
 
 # Data input section
 
-lastName <- "Kruschke"
-firstName <- "John K."
-title <- "Doing Bayesian Analysis: A Tutorial With R, JAGS, And Stan, Second Edition"
-ISBN13 <- "978-0-12-405888-0"
-cover <- "hard cover"
-publisher <- "Academic Press"
-coverPictureURL <- "http://ecx.images-amazon.com/images/I/51Jt%2BWN9MqL.jpg"
-copyright <- 2015
-datePublished <- "January 2015"
-place <- "Boston"
-lccn <- 2014011293
-location  <- "Eric"
-price <- 90.58
+lastName <- "Clare"
+firstName <- "Cassandra"
+title <- "City Of Ashes"
+ISBN13 <- "978-1-4814-5597-8"
+cover <- "Paperback"
+  publisher <- "Margaret K. McElderry Books"
+coverPictureURL <- "http://ecx.images-amazon.com/images/I/51%2BULZ5O8jL.jpg"
+copyright <- 2008
+datePublished <- "September 2015"
+place <- "New York"
+lccn <- 2007014714
+location  <- "Helen"
+price <- 10.67
 
 # Code section
 Author1 <- '"author" : {"lastName" : "'
