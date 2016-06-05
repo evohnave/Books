@@ -9,19 +9,20 @@ source(file = "MainScript.R")
 
 # Data input section
 
-lastName <- "Clare"
-firstName <- "Cassandra"
-title <- "City Of Ashes"
-ISBN13 <- "978-1-4814-5597-8"
-cover <- "Paperback"
-  publisher <- "Margaret K. McElderry Books"
-coverPictureURL <- "http://ecx.images-amazon.com/images/I/51%2BULZ5O8jL.jpg"
-copyright <- 2008
-datePublished <- "September 2015"
-place <- "New York"
-lccn <- 2007014714
-location  <- "Helen"
-price <- 10.67
+lastName <- "Retowski"
+firstName <- "Otto W."
+title <- "Die M\\U00FCnzen Der Komnenen Von Trapezunt"
+ISBN13 <- NULL
+cover <- "Hard Cover"
+publisher <- "Klinkhardt & Biermann"
+coverPictureURL <- "https://images.vcoins.com/product_image/9/F/6/fHL5Y2qi7cADJ4Jk9NbrN6FgpC3XYZ.jpg"
+copyright <- 1974
+datePublished <- "January 1974"
+place <- "Braunschweig"
+lccn <- NULL
+location  <- "Eric"
+price <- 64.83
+edition <- 2
 
 # Code section
 Author1 <- '"author" : {"lastName" : "'
@@ -41,10 +42,11 @@ place <- paste('"place" : "', stri_escape_unicode(place), '", ', sep = "")
 lccn <- paste('"lccn" : "', lccn, '", ', sep = "")
 location <- paste('"location" : "', location, '", ', sep = "")
 price <- paste('"PurchasePrice" : ', price, sep = "")
+edition <- paste(', "Edition" : ', edition, sep = "")
 
 book <- paste('{', author, title, ISBN13, purchaseId, cover, coverPicture,
               publisher, copyright, datePublished, place, lccn, location, 
-              price, '}',
+              price, edition, '}',
               sep = "")
 # book <- paste('{', author, title, ISBN13, purchaseId, cover, coverPicture,
 #               copyright, datePublished, place, location, price, '}',
