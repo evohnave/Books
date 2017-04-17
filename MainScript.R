@@ -59,8 +59,14 @@ getISBN10 <- function(){}
 
 getISBN13 <- function(s){
   # Determines the ISBN13 from the ISBN10
+  # Remove dashes, if they exist
+  s = stri_replace_all(s, replacement = "", regex = "-")
   ret <- paste("978", substr(s, 1, 9), sep = "")
   a <- as.numeric(lapply(X = 1:12, FUN = function(x){substr(ret, x, x)}))
   check = (10 - sum(a * (rep(c(1, 3), 6)))) %% 10
   return(paste(ret, check, sep = ""))
 }
+
+
+# Close the database
+mongo.disconnect(mongo)
